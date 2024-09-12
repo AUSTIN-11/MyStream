@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyStream - Watch Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>MyStream</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Trending</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search Bar and Genre Filter (Form) -->
+  <section class="search-bar">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search movies, TV shows...">
+      <select id="genre-select">
+        <option value="">All Genres</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div id="search-suggestions" class="search-suggestions"></div>
+  </section>
+
+  
+    <!-- Movies Section -->
+    <section class="movies">
+      <h2>Movies</h2>
+      <div class="movies-grid" id="movies-grid">
+        <!-- Movie Items will be dynamically loaded here -->
+      </div>
+    </section>
+  </section>
+
+  <!-- Main Section -->
+  <section class="main-content">
+    <div id="video-player">
+      <iframe id="player" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MyStream. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js">
+  </script>
+</body>
+</html>
